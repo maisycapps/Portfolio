@@ -1,28 +1,49 @@
 /* Nav Bar */
 header {
-   font-family:Arial, Helvetica, sans-serif;
-   color: blue;
-   background-color: aliceblue;
-   text-align: center;
-   padding: 5%;
-   position: fixed;
-   z-index: 1;
+    color: blue;
+    font-family:Arial, Helvetica, sans-serif;
+    position: fixed;
+    z-index: 1;
+    margin-top: 1cm;   
+    margin-left: .75cm; 
+}
+header p {
+    display: inline-block;
+    margin: 1cm;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+header a {
+    display: inline-block;
+    margin: 1cm;
 }
 
-/* Page Title Text */
+
+/* About Page Image */
+.mePic {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3.75cm;
+    padding-bottom: 1cm;
+    z-index: 0;
+}
+
+/* About Page Title Text */
 .headText {
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     display: block;
-    margin-left: 2cm;
-    
+    margin-left: 2cm;    
 }
 
-/* About Page Image */
-.mePic {
+/* Portfolio Page Image */
+.ringPic {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 3.75cm;
+    padding-bottom: 1cm;
     z-index: 0;
 }
 
@@ -31,13 +52,19 @@ header {
 .bodyText {
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
-    display: inline-block;
+    display: block
     margin-left: 2cm;
 }
-
-
+/* side by side lists */
+.flex {
+    display: inline-block;
+}
+ul {
+    margin-left: 1cm;
+}
 h4 {
     color: grey;
+    margin-left: 1.4cm;
 }
 
 li {
