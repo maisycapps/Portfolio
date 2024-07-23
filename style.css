@@ -18,6 +18,18 @@ header a {
     margin: 1cm;
 }
 
+/* Home Page Image */
+.homeBackground {
+    background-image: url("https://static.wixstatic.com/media/c3d345_c6df2a5b8ddf4cc5ba39a50de80dd453~mv2.png/v1/fill/w_973,h_695,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/BizCardFront.png");
+    z-index: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-clip: border-box;
+    transition: background-size 0.2s;
+    transition-timing-function: cubic-bezier(.07,1.41,.82,1.41);
+}
+
+
 
 /* About Page Image */
 .mePic {
@@ -82,6 +94,10 @@ a {
 /* Spacing between body and footer */
 .bottomSpace {
     padding: 5%;
+}
+/* Home Page Footer-Body spacing */
+.bottomSpaceHome {
+    padding-top: 80%;
 }
 /* Footer Mods */
 footer {
