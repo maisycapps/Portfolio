@@ -4,9 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <script src="javascript.js" defer></script>
+    <title>Personal Website</title>
 </head>
 <body>
+    
+    <!-- Nav Bar -->
+     <nav alt="Navigation Bar">
+        <!-- logo/Home in Nav -->
+         <div id="myName">
+            <a href="index.html">
+                <img src="https://static.wixstatic.com/media/c3d345_4c463f2b06444c63bcc55eecd9df947f~mv2.png/v1/crop/x_0,y_458,w_1345,h_537/fill/w_816,h_326,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Ring%20Logo.png" alt="logo"/>
+            </a>
+        </div>
+        <!-- Links in Nav -->
+        <div id="siteLinks">
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Projects</a>
+            <a href="contact.html">Connect</a>
+        </div>
+    </nav>
+
+    <!-- Page Contents -->
+    <div class="container">
+        
+        <!-- Form -->
+        <form id="form">
+            
+            <!-- Connect Text -->
+            <h1 style="font-style: italic; color: grey;">connect</h1>
+             
+            <!-- Name -->
+            <div id="field">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name"/>
+            </div>
+            
+            <!-- Email -->
+             <div id="field">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email"/>
+            </div>
+            
+            <!-- Message -->
+            <div id="field">
+                <label for="textEntry">Inquiry:</label>
+                <textarea name="inquiry" id="textArea">say things here</textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div id="field" class="button">
+                <input type="submit" value="Bon Voyage" style="background-color: pink;">
+            </div>
+
+        </form>
+
+    </div>
+    
+    <footer>Thank you for visiting</footer>
     
 </body>
 </html>

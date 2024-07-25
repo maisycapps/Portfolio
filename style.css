@@ -1,22 +1,94 @@
-/* Nav Bar Mods */
-header {
-    color: blue;
+/* ENTIRE PAGE*/
+html {
     font-family:Arial, Helvetica, sans-serif;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+}
+/* CENTRAL PAGE */
+body {
+    justify-content: center;
+    max-width: 900px;
+    background-color: beige;
+    margin: 0 auto;
+    margin: 0 auto;
+    height: 100vh;
+    width: 80vw;
+    height: 110vh;
+}
+
+.container {
+    justify-content: center;
+    align-content: center;
+    width: 80vw;
+    max-width: 900px;
+    height: 100vh;
+    padding-top: 2%;
+    background-color: yellow;
+}
+
+/*NAV BAR */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 100%;
+    left:0 ;
+    right:0 ;
+    text-decoration: none;
+    background-color: orange;
     position: fixed;
     z-index: 1;
-    margin-top: 1cm;   
-    margin-left: .75cm; 
 }
-header p {
-    display: inline-block;
-    margin: 1cm;
-    text-transform: uppercase;
-    font-weight: bold;
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
 }
-header a {
-    display: inline-block;
-    margin: 1cm;
+a > img {
+    height: 80px;
 }
+
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: pink;
+    font-size: small;
+    font-weight: bolder;
+    padding: 10px;
+}
+
+
+/* CONTACT */
+
+#form {
+    padding: 10%;
+}
+
+#field {
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+input:hover {
+    background-color: yellow;
+}
+
+textarea:hover {
+    background-color: pink;
+}
+
+.button {
+    margin-top: 1%;
+}
+
+/* HOME */
 
 /* Home Page Image */
 .homeBackground {
@@ -29,7 +101,7 @@ header a {
     transition-timing-function: cubic-bezier(.07,1.41,.82,1.41);
 }
 
-
+/* ABOUT */
 
 /* About Page Image */
 .mePic {
@@ -42,6 +114,17 @@ header a {
     z-index: 0;
 }
 
+/* List Headers */
+h4 {
+    color: grey;
+}
+/* List Items */
+li {
+    list-style-type:square;
+}
+
+/* PORTFOLIO */
+
 /* Portfolio Page Image */
 .ringPic {
     width: 64%;
@@ -51,61 +134,4 @@ header a {
     padding-top: 3.75cm;
     padding-bottom: 1cm;
     z-index: 0;
-}
-
-/* Body Title Text */
-.headText {
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
-    display: block;
-    margin-left: 2cm;   
-}
-
-/* Body Text */
-.bodyText {
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
-    display: block;
-    margin-left: 2cm;
-}
-
-/* List Mods */
-ul {
-    margin-left: 1cm;
-}
-h4 {
-    color: grey;
-    margin-left: 1.4cm;
-}
-li {
-    list-style-type:square;
-}
-
-/* side by side lists */
-.flex {
-    display: inline-block;
-}
-
-/* Links */
-a {
-    color: blue;
-}
-
-/* Spacing between body and footer */
-.bottomSpace {
-    padding: 5%;
-}
-/* Home Page Footer-Body spacing */
-.bottomSpaceHome {
-    padding-top: 80%;
-}
-/* Footer Mods */
-footer {
-    font-family: Arial, Helvetica, sans-serif;
-    display: block;
-    text-align: center;
-    color: blue;
-    font-size: small;
-    margin-top: 1cm;
-    margin-bottom: 1cm;
 }
