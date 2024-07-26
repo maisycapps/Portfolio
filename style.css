@@ -1,8 +1,3 @@
-/* ENTIRE PAGE*/
-html {
-
-}
-
 /* CENTRAL PAGE aka BODY*/
 body {
     font-family:Arial, Helvetica, sans-serif;
@@ -12,15 +7,27 @@ body {
     justify-content: center;
 }
 
-/* CONTEBNT CONTAINER */
+@media screen and (max-width:900px) {
+    .mediaSizing {
+        background-size: 100vh;
+    }
+}
+
+/* CONTENT CONTAINER */
 .container {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
     margin: 0 auto;
-    padding-right: 2%;
-    padding-left: 2%;
+    padding-left: 10%;
+}
+
+/*  CONTENT TEXT CONTAINER */
+#textBox {
+    margin-left: 20%;
+    padding-bottom: 20%;
+
 }
 
 /*NAV BAR */
@@ -71,7 +78,8 @@ footer {
     font-weight: bolder;
     padding: 10px;
     z-index: 1;
-    position:relative;
+    position:fixed;
+    width: 100%;
     bottom: 0;
 }
 
@@ -109,18 +117,15 @@ textarea:hover {
 
 /* SUCCESS PAGE */
 #success {
-    display: inline-block;
+    display: block;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-
+    margin:auto
 }
 
 /* ABOUT PAGE*/
 
 /* Image */
 .mePic {
-    width: 64%;
     display: flex;
     margin-left: auto;
     margin-right: auto;
