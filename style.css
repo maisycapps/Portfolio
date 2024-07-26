@@ -1,16 +1,15 @@
+/* MEDIA MODIFICATIONS */
+
+
+/* PAGE WRAPPER */
+#wrap {
+    padding: 3rem 3rem 2rem
+}
+
 /* CENTRAL PAGE aka BODY*/
 body {
     font-family:Arial, Helvetica, sans-serif;
-    height: 100vh;
-    min-width: 400px;
-    margin: 0 auto;
     justify-content: center;
-}
-
-@media screen and (max-width:900px) {
-    .mediaSizing {
-        background-size: 100vh;
-    }
 }
 
 /* CONTENT CONTAINER */
@@ -23,11 +22,16 @@ body {
     padding-left: 10%;
 }
 
-/*  CONTENT TEXT CONTAINER */
+/* CONTENT CONTAINER */
+.containerB {
+    display: flex;
+    justify-content: center;
+}
+
+/*CONTENT TEXT CONTAINER */
 #textBox {
     margin-left: 20%;
     padding-bottom: 20%;
-
 }
 
 /*NAV BAR */
@@ -41,6 +45,8 @@ nav {
     text-decoration: none;
     position: fixed;
     z-index: 1;
+    background: linear-gradient(yellow, rgba(255, 255, 255, 0)
+    )
 }
 
 /* Nav Hover */
@@ -56,8 +62,8 @@ a {
 }
 
 #siteLinks {
-    width: 200px;
-    padding-right: 30px;
+    /* width: 200px; */
+    /* padding-right: 30px; */
 }
 
 a:hover {
@@ -66,29 +72,32 @@ a:hover {
 
 /* Logo */
 a > img {
-    height: 80px;
+    height: 6rem;
 }
 
 
 /* FOOTER */
 footer {
-    display: flex;
-    justify-content: center;
+    text-align: center;
     font-size: small;
     font-weight: bolder;
-    padding: 10px;
-    z-index: 1;
-    position:fixed;
-    width: 100%;
+    height: 40px;
+    right: 0;
+    left: 0;
     bottom: 0;
+    position: fixed;
+    background: linear-gradient(rgba(255, 255, 255, 0), yellow
+    )
 }
 
 
 /* CONTACT PAGE*/
 
 #form {
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    margin:0 auto;
+    justify-content: center;
 }
 
 h1 {
@@ -108,11 +117,11 @@ input:hover {
 }
 
 textarea:hover {
-    background-color: pink;
+    background-color: yellow;
 }
 
 .button {
-    margin-top: 1%;
+    margin-top: 1.8%;
 }
 
 /* SUCCESS PAGE */
@@ -129,7 +138,7 @@ textarea:hover {
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 9.5%;
+    padding-top: 3rem;
     padding-bottom: 1cm;
     z-index: 0;
 }
@@ -140,7 +149,6 @@ textarea:hover {
     display: flex;
     justify-content: center;
 }
-
 
 /* List Headers */
 h4 {

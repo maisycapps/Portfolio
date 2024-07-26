@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="mediaSizing">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +7,10 @@
     <script src="javascript.js" defer></script>
     <title>Personal Website</title>
 </head>
-<body>
+<body id="wrap">
     
     <!-- Nav Bar -->
-     <nav alt="Navigation Bar">
+    <nav alt="Navigation Bar">
         <!-- logo/Home in Nav -->
          <div id="myName">
             <a href="index.html">
@@ -35,8 +35,8 @@
     </h1>
 
     <!-- Page Contents -->
-    <div class="container">
-        
+    <div class="containerB">
+
         <!-- Form -->
         <form id="form">
 
@@ -55,19 +55,16 @@
             <!-- Message -->
             <div id="field">
                 <label for="textEntry">Inquiry:</label>
-                <textarea name="inquiry" id="textArea">say things here</textarea>
+                <textarea name="inquiry" id="textArea"></textarea>
             </div>
 
             <!-- Submit Button -->
             <div id="field" class="button">
-                <input id="submit" type="submit" value="Bon Voyage" style="background-color: pink;">
+                <input id="submit" type="submit" value="send" style="background-color: pink;">
             </div>
 
         </form>
-
     </div>
-    
-    <footer>Thank you for visiting</footer>
     
 </body>
 </html>
