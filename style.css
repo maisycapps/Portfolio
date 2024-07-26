@@ -1,51 +1,63 @@
 /* ENTIRE PAGE*/
 html {
-    font-family:Arial, Helvetica, sans-serif;
-    background-color: red;
-    display: flex;
-    justify-content: center;
-}
-/* CENTRAL PAGE */
-body {
-    justify-content: center;
-    max-width: 900px;
-    background-color: beige;
-    margin: 0 auto;
-    margin: 0 auto;
-    height: 100vh;
-    width: 80vw;
-    height: 110vh;
+
 }
 
-.container {
-    justify-content: center;
-    align-content: center;
-    width: 80vw;
-    max-width: 900px;
+/* CENTRAL PAGE aka BODY*/
+body {
+    font-family:Arial, Helvetica, sans-serif;
     height: 100vh;
-    padding-top: 2%;
-    background-color: yellow;
+    min-width: 400px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+/* CONTEBNT CONTAINER */
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 0 auto;
+    padding-right: 2%;
+    padding-left: 2%;
 }
 
 /*NAV BAR */
 nav {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    width: 100%;
-    max-width: 100%;
-    left:0 ;
-    right:0 ;
+    align-items: center;
+    right: 0;
+    left: 0;
+    top: 0;
     text-decoration: none;
-    background-color: orange;
     position: fixed;
     z-index: 1;
 }
+
+/* Nav Hover */
+nav:hover {
+    background-color: yellow;
+}
+
+/* Nav Links Right */
 a {
     text-decoration: none;
     color: black;
     font-weight: bolder;
 }
+
+#siteLinks {
+    width: 200px;
+    padding-right: 30px;
+}
+
+a:hover {
+    color: brown;
+}
+
+/* Logo */
 a > img {
     height: 80px;
 }
@@ -55,18 +67,25 @@ a > img {
 footer {
     display: flex;
     justify-content: center;
-    align-content: center;
-    background-color: pink;
     font-size: small;
     font-weight: bolder;
     padding: 10px;
+    z-index: 1;
+    position:relative;
+    bottom: 0;
 }
 
 
-/* CONTACT */
+/* CONTACT PAGE*/
 
 #form {
-    padding: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
 }
 
 #field {
@@ -88,50 +107,49 @@ textarea:hover {
     margin-top: 1%;
 }
 
-/* HOME */
+/* SUCCESS PAGE */
+#success {
+    display: inline-block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 
-/* Home Page Image */
-.homeBackground {
-    background-image: url("https://static.wixstatic.com/media/c3d345_c6df2a5b8ddf4cc5ba39a50de80dd453~mv2.png/v1/fill/w_973,h_695,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/BizCardFront.png");
-    z-index: 0;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-clip: border-box;
-    transition: background-size 0.2s;
-    transition-timing-function: cubic-bezier(.07,1.41,.82,1.41);
 }
 
-/* ABOUT */
+/* ABOUT PAGE*/
 
-/* About Page Image */
+/* Image */
 .mePic {
     width: 64%;
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 3.75cm;
+    padding-top: 9.5%;
     padding-bottom: 1cm;
     z-index: 0;
 }
+
+/* Name */
+#aboutName {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
 
 /* List Headers */
 h4 {
     color: grey;
 }
+
 /* List Items */
 li {
     list-style-type:square;
 }
 
-/* PORTFOLIO */
-
-/* Portfolio Page Image */
-.ringPic {
-    width: 64%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 3.75cm;
-    padding-bottom: 1cm;
-    z-index: 0;
+/* Link Buttons */
+button {
+    display: flex;
+    flex-direction: row;
+    margin: 9px;
 }
