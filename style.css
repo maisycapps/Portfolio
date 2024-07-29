@@ -61,11 +61,6 @@ a {
     font-weight: bolder;
 }
 
-#siteLinks {
-    /* width: 200px; */
-    /* padding-right: 30px; */
-}
-
 a:hover {
     color: brown;
 }
